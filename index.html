@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <style>
+      body {
+        /* reset */
+        border: 0;
+        margin: 0;
+        padding: 0;
+
+        background-color: black;
+        height: 85vh;
+
+        /* flex */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      #meishi {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 49vw;
+        animation: fadein 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="meishi">Hello</div>
+    <script>
+      window.onload = () => {
+        document.getElementById('meishi').innerText = '沒事';
+      };
+    </script>
+  </body>
+</html>
